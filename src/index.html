@@ -7,7 +7,7 @@
   
   
   
-      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="css/style.css">
 
   
 </head>
@@ -16,16 +16,16 @@
 
   <div>
   <div>
-    Algorithm:
+    <h1>Simulation</h1>
     <form id="algorithm">
-      <input type="radio" name="algorithm" value="fcfs" checked/> FCFS<br/>
-      <input type="radio" name="algorithm" value="sjf" /> SJF<br/>
-      <input type="radio" name="algorithm" value="priority" /> Priority scheduling<br/>
-      <input type="radio" name="algorithm" value="robin" /> Round Robin
+      <input type="radio" name="algorithm" value="fcfs" checked/> FCFS
+      <input type="radio" name="algorithm" value="sjf" /> SJF
+      <input type="radio" name="algorithm" value="priority" /> Priority scheduling
+      <input type="radio" name="algorithm" value="robin" /> Round Robins
     </form>
     <br>
   </div>
-  <table id="inputTable">
+  <table id="inputTable" >
     <tr>
       <th>Process</th>
 
@@ -52,15 +52,17 @@
     </tr>
 
   </table>
-  <input id="minus" style="display: inline; left: 85px; position: absolute; top: 194px;" type="button" value="Delete row" onclick="deleteRow();" />
+  <input id="minus" class="myButton" style="display: inline; left: 700px; position: absolute; top: 195px;" type="button" value="Delete row" onclick="deleteRow();" />
 </div>
-<input type="button" value="Add Row" onclick="addRow();" />
+<div>
+<input type="button" class="myButton" value="Add" onclick="addRow();" />
+</div>
 <div>
 </div>
 <p id="quantumParagraph" hidden>Quantum:
   <input style="width: 50px;" id="quantum" type="text" value="3" />
 </p>
-<input type="button" value="Go" onclick="draw();" />
+<input type="button" class="myButton" value="Go" onclick="draw();" />
 <br/><br/>
 
 <fresh>
@@ -68,15 +70,15 @@
 <p>
   Timer: <strong id="timer"></strong> sec
 </p>
-<p>
+<p class="hey">
   Average Waiting Time: <strong class="grdtotal"></strong>sec </br>
   Average Turn Around Time: <strong class="gtotal"></strong>sec
-</p>
+</p >
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
 
   
 
-    <script  src="./js/index.js"></script>
+    <script  src="js/index.js"></script>
 
 
 
